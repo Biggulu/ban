@@ -13,23 +13,23 @@ payload:
   - DOMAIN,gallery.pandora.xiaomi.com
   - DOMAIN,o2o.api.xiaomi.com
   - DOMAIN,bss.pandora.xiaomi.com
-  - DOMAIN,ixiguavideo.com
-  - DOMAIN,ixigua.com
-  - DOMAIN,snssdk.com
-  - DOMAIN,douyin.com
-  - DOMAIN,amemv.com
-  - DOMAIN,toutiao.com
+  - DOMAIN-SUFFIX,ixiguavideo.com
+  - DOMAIN-SUFFIX,ixigua.com
+  - DOMAIN-SUFFIX,snssdk.com
+  - DOMAIN-SUFFIX,douyin.com
+  - DOMAIN-SUFFIX,amemv.com
+  - DOMAIN-SUFFIX,toutiao.com
   - DOMAIN,v.kandian.qq.com
-  - DOMAIN,yximgs.com
-  - DOMAIN,gifshow.com
+  - DOMAIN-SUFFIX,yximgs.com
+  - DOMAIN-SUFFIX,gifshow.com
   - DOMAIN,v.weishi.qq.com
-  - DOMAIN,pearvideo.com
-  - DOMAIN,miaopai.com
-  - DOMAIN,kuaishou.com
-  - DOMAIN,qupai.me
-  - DOMAIN,meipai.com
-  - DOMAIN,huoshan.com
-  - DOMAIN,ergengtv.com
+  - DOMAIN-SUFFIX,pearvideo.com
+  - DOMAIN-SUFFIX,miaopai.com
+  - DOMAIN-SUFFIX,kuaishou.com
+  - DOMAIN-SUFFIX,qupai.me
+  - DOMAIN-SUFFIX,meipai.com
+  - DOMAIN-SUFFIX,huoshan.com
+  - DOMAIN-SUFFIX,ergengtv.com
   - DOMAIN,baijiahao.baidu.com
   - DOMAIN,xiongzhang.baidu.com
   - DOMAIN,519332DA.rtc.youme.im
