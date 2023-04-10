@@ -1,56 +1,57 @@
-gvod.aiseejapp.atianqi.com
-stat.pandora.xiaomi.com
-upgrade.mishop.pandora.xiaomi.com
-logonext.tv.kuyun.com
-config.kuyun.com
-mishop.pandora.xiaomi.com
-dvb.pandora.xiaomi.com
-api.ad.xiaomi.com
-de.pandora.xiaomi.com
-data.mistat.xiaomi.com
-jellyfish.pandora.xiaomi.com
-gallery.pandora.xiaomi.com
-o2o.api.xiaomi.com
-bss.pandora.xiaomi.com
-ixiguavideo.com
-ixigua.com
-snssdk.com
-douyin.com
-amemv.com
-toutiao.com
-v.kandian.qq.com
-yximgs.com
-gifshow.com
-v.weishi.qq.com
-pearvideo.com
-miaopai.com
-kuaishou.com
-qupai.me
-meipai.com
-huoshan.com
-ergengtv.com
-baijiahao.baidu.com
-xiongzhang.baidu.com
-519332DA.rtc.youme.im
-ad.hpplay.cn
-adcdn.hpplay.cn
-adeng.hpplay.cn
-alog.umeng.com
-android.bugly.qq.com
-cdn.hpplay.com.cn
-conf.hpplay.cn
-fix.hpplay.cn
-g.dtv.cn.miaozhen.com
-gslb.hpplay.cn
-h5.hpplay.com.cn
-hotupgrade.hpplay.cn
-hotupgrade.hpplay.com.cn
-hpplay.cdn.cibn.cc
-image.hpplay.cn
-imdns.hpplay.cn
-pin.hpplay.cn
-rp.hpplay.cn
-sdkauth.hpplay.cn
-sl.hpplay.cn
-tvapp.hpplay.cn
-vipauth.hpplay.cn
+payload:
+  - DOMAIN,gvod.aiseejapp.atianqi.com
+  - DOMAIN,stat.pandora.xiaomi.com
+  - DOMAIN,upgrade.mishop.pandora.xiaomi.com
+  - DOMAIN,logonext.tv.kuyun.com
+  - DOMAIN,config.kuyun.com
+  - DOMAIN,mishop.pandora.xiaomi.com
+  - DOMAIN,dvb.pandora.xiaomi.com
+  - DOMAIN,api.ad.xiaomi.com
+  - DOMAIN,de.pandora.xiaomi.com
+  - DOMAIN,data.mistat.xiaomi.com
+  - DOMAIN,jellyfish.pandora.xiaomi.com
+  - DOMAIN,gallery.pandora.xiaomi.com
+  - DOMAIN,o2o.api.xiaomi.com
+  - DOMAIN,bss.pandora.xiaomi.com
+  - DOMAIN,ixiguavideo.com
+  - DOMAIN,ixigua.com
+  - DOMAIN,snssdk.com
+  - DOMAIN,douyin.com
+  - DOMAIN,amemv.com
+  - DOMAIN,toutiao.com
+  - DOMAIN,v.kandian.qq.com
+  - DOMAIN,yximgs.com
+  - DOMAIN,gifshow.com
+  - DOMAIN,v.weishi.qq.com
+  - DOMAIN,pearvideo.com
+  - DOMAIN,miaopai.com
+  - DOMAIN,kuaishou.com
+  - DOMAIN,qupai.me
+  - DOMAIN,meipai.com
+  - DOMAIN,huoshan.com
+  - DOMAIN,ergengtv.com
+  - DOMAIN,baijiahao.baidu.com
+  - DOMAIN,xiongzhang.baidu.com
+  - DOMAIN,519332DA.rtc.youme.im
+  - DOMAIN,ad.hpplay.cn
+  - DOMAIN,adcdn.hpplay.cn
+  - DOMAIN,adeng.hpplay.cn
+  - DOMAIN,alog.umeng.com
+  - DOMAIN,android.bugly.qq.com
+  - DOMAIN,cdn.hpplay.com.cn
+  - DOMAIN,conf.hpplay.cn
+  - DOMAIN,fix.hpplay.cn
+  - DOMAIN,g.dtv.cn.miaozhen.com
+  - DOMAIN,gslb.hpplay.cn
+  - DOMAIN,h5.hpplay.com.cn
+  - DOMAIN,hotupgrade.hpplay.cn
+  - DOMAIN,hotupgrade.hpplay.com.cn
+  - DOMAIN,hpplay.cdn.cibn.cc
+  - DOMAIN,image.hpplay.cn
+  - DOMAIN,imdns.hpplay.cn
+  - DOMAIN,pin.hpplay.cn
+  - DOMAIN,rp.hpplay.cn
+  - DOMAIN,sdkauth.hpplay.cn
+  - DOMAIN,sl.hpplay.cn
+  - DOMAIN,tvapp.hpplay.cn
+  - DOMAIN,vipauth.hpplay.cn
