@@ -15,7 +15,7 @@ DOMAIN,o2o.api.xiaomi.com
 DOMAIN,bss.pandora.xiaomi.com
 DOMAIN,v.kandian.qq.com
 DOMAIN,v.weishi.qq.com
-DOMAIN,baijiahao.baidu.com
+#DOMAIN,baijiahao.baidu.com
 DOMAIN,xiongzhang.baidu.com
 DOMAIN,519332DA.rtc.youme.im
 DOMAIN,ad.hpplay.cn
