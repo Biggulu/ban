@@ -1,5 +1,7 @@
 # 内容：NewBing
 # 数量：3条
+# 更新于：2024.08.20
 DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,bing.net
 DOMAIN-SUFFIX,bingapis.com
+DOMAIN-SUFFIX,copilot.microsoft.com
