@@ -2,7 +2,7 @@ proxy-groups:
   # ================== 核心智能测速组 (升级为 smart + lazy + lightgbm) ==================
   - name: ⚡ ‍低延迟
     type: smart
-    url: 'https://i.ytimg.com/generate_204'
+    url: 'https://cp.cloudflare.com/generate_204'
     interval: 600
     lazy: true
     strategy: sticky-sessions
@@ -13,7 +13,7 @@ proxy-groups:
 
   - name: 🇭🇰 ‍香港
     type: smart
-    url: 'https://i.ytimg.com/generate_204'
+    url: 'https://cp.cloudflare.com/generate_204'
     interval: 450
     lazy: true
     strategy: sticky-sessions
@@ -24,7 +24,7 @@ proxy-groups:
 
   - name: 🇹🇼 ‍台湾
     type: smart
-    url: 'https://i.ytimg.com/generate_204'
+    url: 'https://cp.cloudflare.com/generate_204'
     interval: 450
     lazy: true
     strategy: sticky-sessions
@@ -35,7 +35,7 @@ proxy-groups:
 
   - name: 🇨🇳 ‍中国
     type: smart
-    url: 'https://i.ytimg.com/generate_204'
+    url: 'https://cp.cloudflare.com/generate_204'
     interval: 450
     lazy: true
     strategy: sticky-sessions
@@ -46,7 +46,7 @@ proxy-groups:
 
   - name: 🇸🇬 ‍新加坡
     type: smart
-    url: 'https://i.ytimg.com/generate_204'
+    url: 'https://cp.cloudflare.com/generate_204'
     interval: 450
     lazy: true
     strategy: sticky-sessions
@@ -57,7 +57,7 @@ proxy-groups:
 
   - name: 🇯🇵 ‍日本
     type: smart
-    url: 'https://i.ytimg.com/generate_204'
+    url: 'https://cp.cloudflare.com/generate_204'
     interval: 450
     lazy: true
     strategy: sticky-sessions
@@ -68,7 +68,7 @@ proxy-groups:
 
   - name: 🇺🇸 ‍美国
     type: smart
-    url: 'https://i.ytimg.com/generate_204'
+    url: 'https://cp.cloudflare.com/generate_204'
     interval: 450
     lazy: true
     strategy: sticky-sessions
@@ -79,7 +79,7 @@ proxy-groups:
 
   - name: 🎏 ‍其他
     type: smart
-    url: 'https://i.ytimg.com/generate_204'
+    url: 'https://cp.cloudflare.com/generate_204'
     interval: 450
     lazy: true
     strategy: sticky-sessions
@@ -126,59 +126,59 @@ proxy-groups:
   # ================== 业务策略组 (引用上面的分组) ==================
   - name: ✈️ ‍起飞
     type: select
-    proxies:[⚡ ‍低延迟, 🇭🇰 ‍香港, 🇹🇼 ‍台湾, 🇨🇳 ‍中国, 🇸🇬 ‍新加坡, 🇯🇵 ‍日本, 🇺🇸 ‍美国, 🎏 ‍其他, 👆🏻 ‍指定, 👆🏻🇭🇰 ‍香港, 👆🏻🇹🇼 ‍台湾, 👆🏻🇨🇳 ‍中国, 👆🏻🇸🇬 ‍新加坡, 👆🏻🇯🇵 ‍日本, 👆🏻🇺🇸 ‍美国, 👆🏻🎏 ‍其他, DIRECT]
+    proxies: [⚡ ‍低延迟, 🇭🇰 ‍香港, 🇹🇼 ‍台湾, 🇨🇳 ‍中国, 🇸🇬 ‍新加坡, 🇯🇵 ‍日本, 🇺🇸 ‍美国, 🎏 ‍其他, 👆🏻 ‍指定, 👆🏻🇭🇰 ‍香港, 👆🏻🇹🇼 ‍台湾, 👆🏻🇨🇳 ‍中国, 👆🏻🇸🇬 ‍新加坡, 👆🏻🇯🇵 ‍日本, 👆🏻🇺🇸 ‍美国, 👆🏻🎏 ‍其他, DIRECT]
 
   - name: 🎥 视频
     type: select
-    proxies:[⚡ ‍低延迟, 🇭🇰 ‍香港, 🇹🇼 ‍台湾, 🇨🇳 ‍中国, 🇸🇬 ‍新加坡, 🇯🇵 ‍日本, 🇺🇸 ‍美国, 🎏 ‍其他, 👆🏻 ‍指定, 👆🏻🇭🇰 ‍香港, 👆🏻🇹🇼 ‍台湾, 👆🏻🇨🇳 ‍中国, 👆🏻🇸🇬 ‍新加坡, 👆🏻🇯🇵 ‍日本, 👆🏻🇺🇸 ‍美国, 👆🏻🎏 ‍其他, DIRECT]
+    proxies: [⚡ ‍低延迟, 🇭🇰 ‍香港, 🇹🇼 ‍台湾, 🇨🇳 ‍中国, 🇸🇬 ‍新加坡, 🇯🇵 ‍日本, 🇺🇸 ‍美国, 🎏 ‍其他, 👆🏻 ‍指定, 👆🏻🇭🇰 ‍香港, 👆🏻🇹🇼 ‍台湾, 👆🏻🇨🇳 ‍中国, 👆🏻🇸🇬 ‍新加坡, 👆🏻🇯🇵 ‍日本, 👆🏻🇺🇸 ‍美国, 👆🏻🎏 ‍其他, DIRECT]
 
   - name: 🎮 游戏平台
     type: select
-    proxies:[⚡ ‍低延迟, 🇭🇰 ‍香港, 🇹🇼 ‍台湾, 🇨🇳 ‍中国, 🇸🇬 ‍新加坡, 🇯🇵 ‍日本, 🇺🇸 ‍美国, 🎏 ‍其他, 👆🏻 ‍指定, 👆🏻🇭🇰 ‍香港, 👆🏻🇹🇼 ‍台湾, 👆🏻🇨🇳 ‍中国, 👆🏻🇸🇬 ‍新加坡, 👆🏻🇯🇵 ‍日本, 👆🏻🇺🇸 ‍美国, 👆🏻🎏 ‍其他, DIRECT]
+    proxies: [⚡ ‍低延迟, 🇭🇰 ‍香港, 🇹🇼 ‍台湾, 🇨🇳 ‍中国, 🇸🇬 ‍新加坡, 🇯🇵 ‍日本, 🇺🇸 ‍美国, 🎏 ‍其他, 👆🏻 ‍指定, 👆🏻🇭🇰 ‍香港, 👆🏻🇹🇼 ‍台湾, 👆🏻🇨🇳 ‍中国, 👆🏻🇸🇬 ‍新加坡, 👆🏻🇯🇵 ‍日本, 👆🏻🇺🇸 ‍美国, 👆🏻🎏 ‍其他, DIRECT]
 
   - name: 🎮 Epic游戏平台
     type: select
-    proxies:[⚡ ‍低延迟, 🇭🇰 ‍香港, 🇹🇼 ‍台湾, 🇨🇳 ‍中国, 🇸🇬 ‍新加坡, 🇯🇵 ‍日本, 🇺🇸 ‍美国, 🎏 ‍其他, 👆🏻 ‍指定, 👆🏻🇭🇰 ‍香港, 👆🏻🇹🇼 ‍台湾, 👆🏻🇨🇳 ‍中国, 👆🏻🇸🇬 ‍新加坡, 👆🏻🇯🇵 ‍日本, 👆🏻🇺🇸 ‍美国, 👆🏻🎏 ‍其他, DIRECT]
+    proxies: [⚡ ‍低延迟, 🇭🇰 ‍香港, 🇹🇼 ‍台湾, 🇨🇳 ‍中国, 🇸🇬 ‍新加坡, 🇯🇵 ‍日本, 🇺🇸 ‍美国, 🎏 ‍其他, 👆🏻 ‍指定, 👆🏻🇭🇰 ‍香港, 👆🏻🇹🇼 ‍台湾, 👆🏻🇨🇳 ‍中国, 👆🏻🇸🇬 ‍新加坡, 👆🏻🇯🇵 ‍日本, 👆🏻🇺🇸 ‍美国, 👆🏻🎏 ‍其他, DIRECT]
 
   - name: 🎮 STEAM下载
     type: select
-    proxies:[DIRECT, ⚡ ‍低延迟, 🇭🇰 ‍香港, 🇹🇼 ‍台湾, 🇨🇳 ‍中国, 🇸🇬 ‍新加坡, 🇯🇵 ‍日本, 🇺🇸 ‍美国, 🎏 ‍其他, 👆🏻 ‍指定, 👆🏻🇭🇰 ‍香港, 👆🏻🇹🇼 ‍台湾, 👆🏻🇨🇳 ‍中国, 👆🏻🇸🇬 ‍新加坡, 👆🏻🇯🇵 ‍日本, 👆🏻🇺🇸 ‍美国, 👆🏻🎏 ‍其他]
+    proxies: [DIRECT, ⚡ ‍低延迟, 🇭🇰 ‍香港, 🇹🇼 ‍台湾, 🇨🇳 ‍中国, 🇸🇬 ‍新加坡, 🇯🇵 ‍日本, 🇺🇸 ‍美国, 🎏 ‍其他, 👆🏻 ‍指定, 👆🏻🇭🇰 ‍香港, 👆🏻🇹🇼 ‍台湾, 👆🏻🇨🇳 ‍中国, 👆🏻🇸🇬 ‍新加坡, 👆🏻🇯🇵 ‍日本, 👆🏻🇺🇸 ‍美国, 👆🏻🎏 ‍其他]
 
   - name: 📺 ‍B站
     type: select
-    proxies:[🛵 ‍墙内, 🇨🇳 ‍中国, 🇭🇰 ‍香港, 🇹🇼 ‍台湾, 👆🏻 ‍指定, 👆🏻🇭🇰 ‍香港, 👆🏻🇹🇼 ‍台湾, 👆🏻🇨🇳 ‍中国, ✈️ ‍起飞, DIRECT]
+    proxies: [🛵 ‍墙内, 🇨🇳 ‍中国, 🇭🇰 ‍香港, 🇹🇼 ‍台湾, 👆🏻 ‍指定, 👆🏻🇭🇰 ‍香港, 👆🏻🇹🇼 ‍台湾, 👆🏻🇨🇳 ‍中国, ✈️ ‍起飞, DIRECT]
 
   - name: 📺 ‍B站(港澳台)
     type: select
-    proxies:[🛵 ‍墙内, 🇨🇳 ‍中国, 🇭🇰 ‍香港, 🇹🇼 ‍台湾, 👆🏻 ‍指定, 👆🏻🇭🇰 ‍香港, 👆🏻🇹🇼 ‍台湾, 👆🏻🇨🇳 ‍中国, ✈️ ‍起飞, DIRECT]
+    proxies: [🛵 ‍墙内, 🇨🇳 ‍中国, 🇭🇰 ‍香港, 🇹🇼 ‍台湾, 👆🏻 ‍指定, 👆🏻🇭🇰 ‍香港, 👆🏻🇹🇼 ‍台湾, 👆🏻🇨🇳 ‍中国, ✈️ ‍起飞, DIRECT]
 
   - name: 🇬 Google
     type: select
-    proxies:[⚡ ‍低延迟, 🇭🇰 ‍香港, 🇹🇼 ‍台湾, 🇨🇳 ‍中国, 🇸🇬 ‍新加坡, 🇯🇵 ‍日本, 🇺🇸 ‍美国, 🎏 ‍其他, 👆🏻 ‍指定, 👆🏻🇭🇰 ‍香港, 👆🏻🇹🇼 ‍台湾, 👆🏻🇨🇳 ‍中国, 👆🏻🇸🇬 ‍新加坡, 👆🏻🇯🇵 ‍日本, 👆🏻🇺🇸 ‍美国, 👆🏻🎏 ‍其他, DIRECT]
+    proxies: [⚡ ‍低延迟, 🇭🇰 ‍香港, 🇹🇼 ‍台湾, 🇨🇳 ‍中国, 🇸🇬 ‍新加坡, 🇯🇵 ‍日本, 🇺🇸 ‍美国, 🎏 ‍其他, 👆🏻 ‍指定, 👆🏻🇭🇰 ‍香港, 👆🏻🇹🇼 ‍台湾, 👆🏻🇨🇳 ‍中国, 👆🏻🇸🇬 ‍新加坡, 👆🏻🇯🇵 ‍日本, 👆🏻🇺🇸 ‍美国, 👆🏻🎏 ‍其他, DIRECT]
 
   - name: 🤖 Google AI
     type: select
-    proxies:[🇺🇸 ‍美国, 🇭🇰 ‍香港, 🇹🇼 ‍台湾, 🇨🇳 ‍中国, 🇸🇬 ‍新加坡, 🇯🇵 ‍日本, 🎏 ‍其他, 👆🏻 ‍指定, 👆🏻🇭🇰 ‍香港, 👆🏻🇹🇼 ‍台湾, 👆🏻🇨🇳 ‍中国, 👆🏻🇸🇬 ‍新加坡, 👆🏻🇯🇵 ‍日本, 👆🏻🇺🇸 ‍美国, 👆🏻🎏 ‍其他]
+    proxies: [🇺🇸 ‍美国, 🇭🇰 ‍香港, 🇹🇼 ‍台湾, 🇨🇳 ‍中国, 🇸🇬 ‍新加坡, 🇯🇵 ‍日本, 🎏 ‍其他, 👆🏻 ‍指定, 👆🏻🇭🇰 ‍香港, 👆🏻🇹🇼 ‍台湾, 👆🏻🇨🇳 ‍中国, 👆🏻🇸🇬 ‍新加坡, 👆🏻🇯🇵 ‍日本, 👆🏻🇺🇸 ‍美国, 👆🏻🎏 ‍其他]
 
   - name: 🤖 Open AI
     type: select
-    proxies:[🇺🇸 ‍美国, 🇭🇰 ‍香港, 🇹🇼 ‍台湾, 🇨🇳 ‍中国, 🇸🇬 ‍新加坡, 🇯🇵 ‍日本, 🎏 ‍其他, 👆🏻 ‍指定, 👆🏻🇭🇰 ‍香港, 👆🏻🇹🇼 ‍台湾, 👆🏻🇨🇳 ‍中国, 👆🏻🇸🇬 ‍新加坡, 👆🏻🇯🇵 ‍日本, 👆🏻🇺🇸 ‍美国, 👆🏻🎏 ‍其他]
+    proxies: [🇺🇸 ‍美国, 🇭🇰 ‍香港, 🇹🇼 ‍台湾, 🇨🇳 ‍中国, 🇸🇬 ‍新加坡, 🇯🇵 ‍日本, 🎏 ‍其他, 👆🏻 ‍指定, 👆🏻🇭🇰 ‍香港, 👆🏻🇹🇼 ‍台湾, 👆🏻🇨🇳 ‍中国, 👆🏻🇸🇬 ‍新加坡, 👆🏻🇯🇵 ‍日本, 👆🏻🇺🇸 ‍美国, 👆🏻🎏 ‍其他]
 
   - name: 🤖 ‍Claude AI
     type: select
-    proxies:[🇺🇸 ‍美国, 🇹🇼 ‍台湾, 🇸🇬 ‍新加坡, 🇯🇵 ‍日本, 🎏 ‍其他, 👆🏻 ‍指定, 👆🏻🇹🇼 ‍台湾, 👆🏻🇸🇬 ‍新加坡, 👆🏻🇯🇵 ‍日本, 👆🏻🇺🇸 ‍美国, 👆🏻🎏 ‍其他]
+    proxies: [🇺🇸 ‍美国, 🇹🇼 ‍台湾, 🇸🇬 ‍新加坡, 🇯🇵 ‍日本, 🎏 ‍其他, 👆🏻 ‍指定, 👆🏻🇹🇼 ‍台湾, 👆🏻🇸🇬 ‍新加坡, 👆🏻🇯🇵 ‍日本, 👆🏻🇺🇸 ‍美国, 👆🏻🎏 ‍其他]
 
   - name: 🧊 ‍Bing
     type: select
-    proxies:[🇭🇰 ‍香港, 🇹🇼 ‍台湾, 🇸🇬 ‍新加坡, 🇯🇵 ‍日本,🇺🇸 ‍美国, 🎏 ‍其他, 👆🏻🇺🇸 ‍美国, 👆🏻🎏 ‍其他,  👆🏻 ‍指定, 👆🏻🇭🇰 ‍香港, 👆🏻🇹🇼 ‍台湾, 👆🏻🇸🇬 ‍新加坡, 👆🏻🇯🇵 ‍日本, ✈️ ‍起飞, 🛵 ‍墙内]
+    proxies: [🇭🇰 ‍香港, 🇹🇼 ‍台湾, 🇸🇬 ‍新加坡, 🇯🇵 ‍日本,🇺🇸 ‍美国, 🎏 ‍其他, 👆🏻🇺🇸 ‍美国, 👆🏻🎏 ‍其他,  👆🏻 ‍指定, 👆🏻🇭🇰 ‍香港, 👆🏻🇹🇼 ‍台湾, 👆🏻🇸🇬 ‍新加坡, 👆🏻🇯🇵 ‍日本, ✈️ ‍起飞, 🛵 ‍墙内]
 
   - name: Ⓜ️ 微软云盘
     type: select
-    proxies:[🇭🇰 ‍香港, 🇹🇼 ‍台湾, 🇸🇬 ‍新加坡, 🇯🇵 ‍日本,🇺🇸 ‍美国, 🎏 ‍其他, 👆🏻🇺🇸 ‍美国, 👆🏻🎏 ‍其他,  👆🏻 ‍指定, 👆🏻🇭🇰 ‍香港, 👆🏻🇹🇼 ‍台湾, 👆🏻🇸🇬 ‍新加坡, 👆🏻🇯🇵 ‍日本, ✈️ ‍起飞, 🛵 ‍墙内]
+    proxies: [🇭🇰 ‍香港, 🇹🇼 ‍台湾, 🇸🇬 ‍新加坡, 🇯🇵 ‍日本,🇺🇸 ‍美国, 🎏 ‍其他, 👆🏻🇺🇸 ‍美国, 👆🏻🎏 ‍其他,  👆🏻 ‍指定, 👆🏻🇭🇰 ‍香港, 👆🏻🇹🇼 ‍台湾, 👆🏻🇸🇬 ‍新加坡, 👆🏻🇯🇵 ‍日本, ✈️ ‍起飞, 🛵 ‍墙内]
 
   - name: 🛵 ‍墙内
     type: select
-    proxies:[DIRECT, REJECT, ✈️ ‍起飞]
+    proxies: [DIRECT, REJECT, ✈️ ‍起飞]
 
   - name: 🪐 ‍白名单
     type: select
@@ -186,7 +186,7 @@ proxy-groups:
 
   - name: 💩 ‍广告
     type: select
-    proxies:[REJECT, DIRECT, ✈️ ‍起飞]
+    proxies: [REJECT, DIRECT, ✈️ ‍起飞]
 
   - name: 🏳️‍🌈 ‍黑名单
     type: select
@@ -194,4 +194,4 @@ proxy-groups:
 
   - name: 🐟 漏网之鱼
     type: select
-    proxies:[🛵 ‍墙内, ✈️ ‍起飞, 💩 ‍广告]
+    proxies: [🛵 ‍墙内, ✈️ ‍起飞, 💩 ‍广告]
