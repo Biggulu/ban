@@ -1,5 +1,0 @@
-[rules]
-MATCH,DIRECT
-
-[proxy-groups]
-🇺🇸 测试组 = url-test, (.*), https://cp.cloudflare.com/generate_204, 450
