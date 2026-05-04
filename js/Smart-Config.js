@@ -596,7 +596,7 @@ function injectRuleProviders(config) {
 	const RP_STEP = 15;
 	let _rpIdx = 0;
 	const nextInterval = () => RP_BASE + ((_rpIdx++) * RP_STEP) + Math.floor(Math.random() * 60);
-	const ACL = 'https://fastly.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash';
+	const ACL = 'https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash';
 	const BAN = 'https://fastly.jsdelivr.net/gh/Biggulu/ban@main';
 	config['rule-providers']['unban'] = {
 		type: 'http',
