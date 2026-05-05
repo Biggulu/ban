@@ -15,6 +15,7 @@ DOMAIN-SUFFIX,is.autonavi.com
 
 #小米查询
 DOMAIN-SUFFIX,findapi.micloud.xiaomi.net
+DOMAIN-SUFFIX,find.api.micloud.xiaomi.net
 DOMAIN-SUFFIX,resolver.mi.xiaomi.com
 
 #小白打印
