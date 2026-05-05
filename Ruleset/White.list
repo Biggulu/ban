@@ -6,12 +6,15 @@ DOMAIN-SUFFIX,snssdk.com
 DOMAIN,tos-d-x-lf.douyin.com
 
 #百度地图
-newclient.map.baidu.com
-newvector.map.baidu.com
-sv.map.baidu.com
+DOMAIN-SUFFIX,newclient.map.baidu.com
+DOMAIN-SUFFIX,newvector.map.baidu.com
+DOMAIN-SUFFIX,sv.map.baidu.com
 
 #高德地图
-is.autonavi.com
+DOMAIN-SUFFIX,is.autonavi.com
+
+#小米查询
+DOMAIN-SUFFIX,findapi.micloud.xiaomi.net
 
 #小白打印
 DOMAIN,micro.obs.cn-east-2.myhuaweicloud.com 
