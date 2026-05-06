@@ -1,57 +1,123 @@
-#屏蔽列表
+# ==================== 小米电视与系统服务 (广告与追踪) ====================
+# 小米视频/广告资源
 DOMAIN,gvod.aiseejapp.atianqi.com
+# 统计分析
 DOMAIN,stat.pandora.xiaomi.com
+# 商城更新/系统更新
 DOMAIN,upgrade.mishop.pandora.xiaomi.com
-DOMAIN,logonext.tv.kuyun.com
-DOMAIN,config.kuyun.com
+# 小米商城相关
 DOMAIN,mishop.pandora.xiaomi.com
+# 数字电视相关
 DOMAIN,dvb.pandora.xiaomi.com
+# 广告 API
 DOMAIN,api.ad.xiaomi.com
+# 预估为数据上报
 DOMAIN,de.pandora.xiaomi.com
+# 小米统计服务
 DOMAIN,data.mistat.xiaomi.com
+# 电视系统组件
 DOMAIN,jellyfish.pandora.xiaomi.com
+# 电视画报广告
 DOMAIN,gallery.pandora.xiaomi.com
+# 线下业务/营销接口
 DOMAIN,o2o.api.xiaomi.com
+# 业务支撑系统
 DOMAIN,bss.pandora.xiaomi.com
-DOMAIN,v.kandian.qq.com
-DOMAIN,v.weishi.qq.com
-#DOMAIN,baijiahao.baidu.com
-DOMAIN,xiongzhang.baidu.com
-DOMAIN,519332DA.rtc.youme.im
+
+# ==================== 酷云 & 电视大数据 (第三方广告/追踪) ====================
+# 酷云日志上报
+DOMAIN,logonext.tv.kuyun.com
+# 酷云配置下发
+DOMAIN,config.kuyun.com
+
+# ==================== 乐播投屏 (广告与 SDK) ====================
+# 投屏广告
 DOMAIN,ad.hpplay.cn
+# 广告 CDN
 DOMAIN,adcdn.hpplay.cn
+# 广告引擎
 DOMAIN,adeng.hpplay.cn
-DOMAIN,alog.umeng.com
-DOMAIN,android.bugly.qq.com
-DOMAIN,cdn.hpplay.com.cn
+# 配置同步
 DOMAIN,conf.hpplay.cn
+# 补丁修复
 DOMAIN,fix.hpplay.cn
-DOMAIN,g.dtv.cn.miaozhen.com
+# 全局负载均衡
 DOMAIN,gslb.hpplay.cn
+# H5 营销页面
 DOMAIN,h5.hpplay.com.cn
+# 热更新
 DOMAIN,hotupgrade.hpplay.cn
+# 热更新备份
 DOMAIN,hotupgrade.hpplay.com.cn
+# CIBN 投屏资源
 DOMAIN,hpplay.cdn.cibn.cc
+# 图片素材
 DOMAIN,image.hpplay.cn
+# 内部域名解析
 DOMAIN,imdns.hpplay.cn
+# 验证/统计
 DOMAIN,pin.hpplay.cn
+# 报表上报
 DOMAIN,rp.hpplay.cn
+# SDK 授权验证
 DOMAIN,sdkauth.hpplay.cn
+# 状态日志
 DOMAIN,sl.hpplay.cn
+# 电视端应用
 DOMAIN,tvapp.hpplay.cn
+# 会员授权验证
 DOMAIN,vipauth.hpplay.cn
+# 静态资源 CDN
+DOMAIN,cdn.hpplay.com.cn
+
+# ==================== 基础统计与 Bug 收集 ====================
+# 友盟统计
+DOMAIN,alog.umeng.com
+# 腾讯 Bugly 崩溃日志
+DOMAIN,android.bugly.qq.com
+# 秒针广告监测
+DOMAIN,g.dtv.cn.miaozhen.com
+# 游密实时音视频 SDK（常用于系统/游戏内语音）
+DOMAIN,519332DA.rtc.youme.im
+
+# ==================== 搜索引擎与腾讯视频 ====================
+# 百度熊掌号（建议屏蔽）
+DOMAIN,xiongzhang.baidu.com
+# 百度百家号（默认注释，按需开启）
+# - 'DOMAIN,baijiahao.baidu.com
+# 腾讯看点视频
+DOMAIN,v.kandian.qq.com
+# 腾讯微视
+DOMAIN,v.weishi.qq.com
+
+# ==================== 短视频平台屏蔽 (关键字匹配) ====================
+# 西瓜视频 CDN
 DOMAIN-KEYWORD,ixiguavideo.com
+# 西瓜视频
 DOMAIN-KEYWORD,ixigua.com
+# 字节跳动通用 SDK (核心)
 DOMAIN-KEYWORD,snssdk.com
+# 抖音
 DOMAIN-KEYWORD,douyin.com
+# 抖音视频域名
 DOMAIN-KEYWORD,amemv.com
+# 今日头条
 DOMAIN-KEYWORD,toutiao.com
+# 快手图片/视频
 DOMAIN-KEYWORD,yximgs.com
+# 快手
 DOMAIN-KEYWORD,gifshow.com
-DOMAIN-KEYWORD,pearvideo.com
-DOMAIN-KEYWORD,miaopai.com
+# 快手
 DOMAIN-KEYWORD,kuaishou.com
+# 梨视频
+DOMAIN-KEYWORD,pearvideo.com
+# 秒拍
+DOMAIN-KEYWORD,miaopai.com
+# 趣拍
 DOMAIN-KEYWORD,qupai.me
+# 美拍
 DOMAIN-KEYWORD,meipai.com
+# 火山小视频
 DOMAIN-KEYWORD,huoshan.com
+# 二更视频
 DOMAIN-KEYWORD,ergengtv.com
