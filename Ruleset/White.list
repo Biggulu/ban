@@ -21,3 +21,5 @@ DOMAIN-SUFFIX,resolver.mi.xiaomi.com
 #小白打印
 DOMAIN,micro.obs.cn-east-2.myhuaweicloud.com 
 
+#科大讯飞拆词
+DOMAIN-SUFFIX,inputnlp.xfinfr.com
