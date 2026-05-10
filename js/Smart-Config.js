@@ -1,4 +1,4 @@
-const VERSION = 'v5.3.0';
+const VERSION = 'v5.3.5';
 
 function isInfoNode(name) {
 	const infoPatterns = ['导航网址', '距离下次重置', '剩余流量', '套餐到期', '网址导航', '官网', '订阅', '到期', '剩余', '重置'];
@@ -775,11 +775,27 @@ function injectRuleProviders(config) {
 		interval: nextInterval(),
 		proxy: RP_PROXY
 	};
-	config['rule-providers']['acc-prerepaireasyprivacy'] = {
+	config['rule-providers']['acc-prerepaireasyprivacy-direct'] = {
 		type: 'http',
 		behavior: 'classical',
-		url: `${ACC}/PreRepairEasyPrivacy/PreRepairEasyPrivacy.yaml`,
-		path: './ruleset/acc-PreRepairEasyPrivacy.yaml',
+		url: `${ACC}/PreRepairEasyPrivacy/PreRepairEasyPrivacy_DIRECT.yaml`,
+		path: './ruleset/acc-PreRepairEasyPrivacy_DIRECT.yaml',
+		interval: nextInterval(),
+		proxy: RP_PROXY
+	};
+	config['rule-providers']['acc-prerepaireasyprivacy-reject'] = {
+		type: 'http',
+		behavior: 'classical',
+		url: `${ACC}/PreRepairEasyPrivacy/PreRepairEasyPrivacy_REJECT.yaml`,
+		path: './ruleset/acc-PreRepairEasyPrivacy_REJECT.yaml',
+		interval: nextInterval(),
+		proxy: RP_PROXY
+	};
+	config['rule-providers']['acc-prerepaireasyprivacy-proxy'] = {
+		type: 'http',
+		behavior: 'classical',
+		url: `${ACC}/PreRepairEasyPrivacy/PreRepairEasyPrivacy_PROXY.yaml`,
+		path: './ruleset/acc-PreRepairEasyPrivacy_PROXY.yaml',
 		interval: nextInterval(),
 		proxy: RP_PROXY
 	};
@@ -788,7 +804,7 @@ function injectRuleProviders(config) {
 }
 
 function injectRules(config) {
-	config.rules = [`GEOSITE,private,DIRECT`, `GEOIP,private,DIRECT,no-resolve`, `RULE-SET,unban,${BIZ.CN_SITE}`, `RULE-SET,bt-direct,DIRECT`, `RULE-SET,white,${BIZ.WHITE}`, `RULE-SET,black,${BIZ.BLACK}`, `RULE-SET,anti-ad,${BIZ.AD}`, `RULE-SET,ad-acl,${BIZ.AD}`, `RULE-SET,ad-prog,${BIZ.AD}`, `RULE-SET,acc-prerepaireasyprivacy,${BIZ.AD}`, `RULE-SET,ad-easy,${BIZ.AD}`, `RULE-SET,ad-easycn,${BIZ.AD}`, `RULE-SET,ad-easypv,${BIZ.AD}`, `RULE-SET,sukka-phishing,${BIZ.AD}`, `RULE-SET,hagezi-tif,${BIZ.AD}`, `RULE-SET,ini-direct-domain,${BIZ.CN_SITE}`, `RULE-SET,ini-direct-ip,${BIZ.CN_SITE},no-resolve`, `RULE-SET,ini-steam-cdn,${BIZ.CN_SITE}`, `GEOSITE,category-game-platforms-download,${BIZ.CN_SITE}`, `GEOSITE,category-public-tracker,${BIZ.CN_SITE}`, `GEOSITE,category-pt,${BIZ.TRACKER}`, `GEOSITE,google-cn,${BIZ.CN_SITE}`, `GEOSITE,category-games@cn,${BIZ.CN_SITE}`, `GEOSITE,openai,${BIZ.GPTAI}`, `GEOSITE,anthropic,${BIZ.CLAI}`, `GEOSITE,google-gemini,${BIZ.GAI}`, `GEOSITE,bing,${BIZ.BING}`, `GEOSITE,category-ai-!cn,${BIZ.AI}`, `GEOSITE,category-communication,${BIZ.IM}`, `GEOIP,telegram,${BIZ.IM},no-resolve`, `GEOSITE,category-social-media-!cn,${BIZ.SOCIAL}`, `GEOIP,twitter,${BIZ.SOCIAL},no-resolve`, `GEOIP,facebook,${BIZ.SOCIAL},no-resolve`, `GEOSITE,onedrive,${BIZ.OD}`, `GEOSITE,youtube,${BIZ.YT}`, `GEOSITE,netflix,${BIZ.NFLX}`, `GEOIP,netflix,${BIZ.NFLX},no-resolve`, `GEOSITE,apple-tvplus,${BIZ.STREAM_OTHER}`, `GEOSITE,tiktok,${BIZ.TIKTOK}`, `GEOSITE,disney,${BIZ.DSNP}`, `GEOSITE,hbo,${BIZ.HBO}`, `GEOSITE,primevideo,${BIZ.PRIME}`, `GEOSITE,category-emby,${BIZ.STREAM_OTHER}`, `GEOSITE,spotify,${BIZ.MUSIC}`, `GEOSITE,bahamut,${BIZ.STREAM_TW}`, `RULE-SET,szkane-bilihmt,${BIZ.BILI}`, `GEOSITE,googlefcm,${BIZ.GOOGLE}`, `GEOSITE,google,${BIZ.GOOGLE}`, `GEOIP,google,${BIZ.GOOGLE},no-resolve`, `GEOSITE,apple,${BIZ.APPLE}`, `GEOSITE,microsoft,${BIZ.MS}`, `GEOSITE,github,${BIZ.TOOLS}`, `GEOSITE,category-speedtest,${BIZ.SPEED}`, `GEOSITE,steam,${BIZ.GAME_INTL}`, `GEOSITE,category-games,${BIZ.GAME_INTL}`, `GEOSITE,paypal,${BIZ.PAYMENTS}`, `GEOSITE,category-ecommerce,${BIZ.INTL_SITE}`, `RULE-SET,ini-proxy-domain,${BIZ.GFW}`, `RULE-SET,ini-proxy-ip,${BIZ.GFW},no-resolve`, `GEOSITE,category-entertainment,${BIZ.INTL_SITE}`, `GEOSITE,gfw,${BIZ.GFW}`, `RULE-SET,szkane-proxygfw,${BIZ.GFW}`, `RULE-SET,cnmedia,${BIZ.CN_SITE}`, `GEOSITE,cn,${BIZ.CN_SITE}`, `GEOIP,cn,${BIZ.CN_SITE},no-resolve`, `MATCH,${BIZ.FINAL}`];
+	config.rules = [`GEOSITE,private,DIRECT`, `GEOIP,private,DIRECT,no-resolve`, `RULE-SET,unban,${BIZ.CN_SITE}`, `RULE-SET,bt-direct,DIRECT`, `RULE-SET,white,${BIZ.WHITE}`, `RULE-SET,black,${BIZ.BLACK}`, `RULE-SET,anti-ad,${BIZ.AD}`, `RULE-SET,ad-acl,${BIZ.AD}`, `RULE-SET,ad-prog,${BIZ.AD}`, `RULE-SET,acc-prerepaireasyprivacy-direct,${BIZ.CN_SITE}`, `RULE-SET,acc-prerepaireasyprivacy-proxy,${BIZ.INTL_SITE}`, `RULE-SET,acc-prerepaireasyprivacy-reject,${BIZ.AD}`, `RULE-SET,ad-easy,${BIZ.AD}`, `RULE-SET,ad-easycn,${BIZ.AD}`, `RULE-SET,ad-easypv,${BIZ.AD}`, `RULE-SET,sukka-phishing,${BIZ.AD}`, `RULE-SET,hagezi-tif,${BIZ.AD}`, `RULE-SET,ini-direct-domain,${BIZ.CN_SITE}`, `RULE-SET,ini-direct-ip,${BIZ.CN_SITE},no-resolve`, `RULE-SET,ini-steam-cdn,${BIZ.CN_SITE}`, `GEOSITE,category-game-platforms-download,${BIZ.CN_SITE}`, `GEOSITE,category-public-tracker,${BIZ.CN_SITE}`, `GEOSITE,category-pt,${BIZ.TRACKER}`, `GEOSITE,google-cn,${BIZ.CN_SITE}`, `GEOSITE,category-games@cn,${BIZ.CN_SITE}`, `GEOSITE,openai,${BIZ.GPTAI}`, `GEOSITE,anthropic,${BIZ.CLAI}`, `GEOSITE,google-gemini,${BIZ.GAI}`, `GEOSITE,bing,${BIZ.BING}`, `GEOSITE,category-ai-!cn,${BIZ.AI}`, `GEOSITE,category-communication,${BIZ.IM}`, `GEOIP,telegram,${BIZ.IM},no-resolve`, `GEOSITE,category-social-media-!cn,${BIZ.SOCIAL}`, `GEOIP,twitter,${BIZ.SOCIAL},no-resolve`, `GEOIP,facebook,${BIZ.SOCIAL},no-resolve`, `GEOSITE,onedrive,${BIZ.OD}`, `GEOSITE,youtube,${BIZ.YT}`, `GEOSITE,netflix,${BIZ.NFLX}`, `GEOIP,netflix,${BIZ.NFLX},no-resolve`, `GEOSITE,apple-tvplus,${BIZ.STREAM_OTHER}`, `GEOSITE,tiktok,${BIZ.TIKTOK}`, `GEOSITE,disney,${BIZ.DSNP}`, `GEOSITE,hbo,${BIZ.HBO}`, `GEOSITE,primevideo,${BIZ.PRIME}`, `GEOSITE,category-emby,${BIZ.STREAM_OTHER}`, `GEOSITE,spotify,${BIZ.MUSIC}`, `GEOSITE,bahamut,${BIZ.STREAM_TW}`, `RULE-SET,szkane-bilihmt,${BIZ.BILI}`, `GEOSITE,googlefcm,${BIZ.GOOGLE}`, `GEOSITE,google,${BIZ.GOOGLE}`, `GEOIP,google,${BIZ.GOOGLE},no-resolve`, `GEOSITE,apple,${BIZ.APPLE}`, `GEOSITE,microsoft,${BIZ.MS}`, `GEOSITE,github,${BIZ.TOOLS}`, `GEOSITE,category-speedtest,${BIZ.SPEED}`, `GEOSITE,steam,${BIZ.GAME_INTL}`, `GEOSITE,category-games,${BIZ.GAME_INTL}`, `GEOSITE,paypal,${BIZ.PAYMENTS}`, `GEOSITE,category-ecommerce,${BIZ.INTL_SITE}`, `RULE-SET,ini-proxy-domain,${BIZ.GFW}`, `RULE-SET,ini-proxy-ip,${BIZ.GFW},no-resolve`, `GEOSITE,category-entertainment,${BIZ.INTL_SITE}`, `GEOSITE,gfw,${BIZ.GFW}`, `RULE-SET,szkane-proxygfw,${BIZ.GFW}`, `RULE-SET,cnmedia,${BIZ.CN_SITE}`, `GEOSITE,cn,${BIZ.CN_SITE}`, `GEOIP,cn,${BIZ.CN_SITE},no-resolve`, `MATCH,${BIZ.FINAL}`];
 	console.log(`[${VERSION}]Injected ${config.rules.length}rules`)
 }
 
