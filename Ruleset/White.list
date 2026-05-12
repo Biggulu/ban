@@ -17,6 +17,9 @@ DOMAIN-SUFFIX,is.autonavi.com
 DOMAIN-SUFFIX,findapi.micloud.xiaomi.net
 DOMAIN-SUFFIX,find.api.micloud.xiaomi.net
 DOMAIN-SUFFIX,resolver.mi.xiaomi.com
+DOMAIN,tracker.ai.xiaomi.com
+DOMAIN,tracker.xiaomixiaoai.com
+
 
 #小白打印
 DOMAIN,micro.obs.cn-east-2.myhuaweicloud.com 
