@@ -28,3 +28,6 @@ DOMAIN,micro.obs.cn-east-2.myhuaweicloud.com
 
 #科大讯飞拆词
 DOMAIN-SUFFIX,inputnlp.xfinfr.com
+
+#美团小程序聊天
+DOMAIN,wss.neixin.cn
