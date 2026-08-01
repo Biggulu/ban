@@ -84,25 +84,13 @@ DOMAIN,519332DA.rtc.youme.im
 # 百度熊掌号（建议屏蔽）
 DOMAIN,xiongzhang.baidu.com
 # 百度百家号（默认注释，按需开启）
-# - 'DOMAIN,baijiahao.baidu.com
+# DOMAIN,baijiahao.baidu.com
 # 腾讯看点视频
 DOMAIN,v.kandian.qq.com
 # 腾讯微视
 DOMAIN,v.weishi.qq.com
 
 # ==================== 短视频平台屏蔽 (关键字匹配) ====================
-# 西瓜视频 CDN
-DOMAIN-KEYWORD,ixiguavideo.com
-# 西瓜视频
-DOMAIN-KEYWORD,ixigua.com
-# 字节跳动通用 SDK (核心)
-DOMAIN-KEYWORD,snssdk.com
-# 抖音
-DOMAIN-KEYWORD,douyin.com
-# 抖音视频域名
-DOMAIN-KEYWORD,amemv.com
-# 今日头条
-DOMAIN-KEYWORD,toutiao.com
 # 快手图片/视频
 DOMAIN-KEYWORD,yximgs.com
 # 快手
