@@ -1,0 +1,13 @@
+# ==================== 短视频平台屏蔽 (关键字匹配) ====================
+# 西瓜视频 CDN
+DOMAIN-KEYWORD,ixiguavideo.com
+# 西瓜视频
+DOMAIN-KEYWORD,ixigua.com
+# 字节跳动通用 SDK (核心)
+DOMAIN-KEYWORD,snssdk.com
+# 抖音
+DOMAIN-KEYWORD,douyin.com
+# 抖音视频域名
+DOMAIN-KEYWORD,amemv.com
+# 今日头条
+DOMAIN-KEYWORD,toutiao.com
