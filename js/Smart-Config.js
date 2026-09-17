@@ -775,7 +775,7 @@ function injectRuleProviders(config) {
 		type: 'http',
 		behavior: 'domain',
 		format: 'mrs',
-		url: 'https://fastly.jsdelivr.net/gh/MiHomoer/MiHomo-Hagezi@release/HageziUltimate.mrs',
+		url: 'https://fastly.jsdelivr.net/gh/MiHomoer/MiHomo-Hagezi@release/HageziProPlus.mrs',
 		path: './ruleset/hagezi-tif.mrs',
 		interval: nextInterval(),
 		proxy: RP_PROXY
