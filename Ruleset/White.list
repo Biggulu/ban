@@ -31,3 +31,6 @@ DOMAIN-SUFFIX,inputnlp.xfinfr.com
 
 #美团小程序聊天
 DOMAIN,wss.neixin.cn
+
+#豆瓣影视推荐
+DOMAIN,frodo.douban.com
