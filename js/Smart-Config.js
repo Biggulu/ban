@@ -385,13 +385,16 @@ function injectBusinessGroups(config, activeSmartNames) {
 
 	function insertManualProxies(baseList) {
 		var result = baseList.slice();
-		var directIdx = result.indexOf('DIRECT');
-		if (directIdx !== -1) {
-			Array.prototype.splice.apply(result, [directIdx, 0].concat(manualGroupNames))
+		if (result[0] === 'DIRECT') {
+      	return result.concat(manualGroupNames);
+	    }
+    	var directIdx = result.indexOf('DIRECT');
+    	if (directIdx !== -1) {
+			Array.prototype.splice.apply(result, [directIdx, 0].concat(manualGroupNames));
 		} else {
-			result = result.concat(manualGroupNames)
-		}
-		return result
+			result = result.concat(manualGroupNames);
+    	}
+    	return result;
 	}
 	var aiProxies = insertManualProxies(filterActive(buildHomeFirstProxies(REGION_ORDER)));
 	var standardProxies = insertManualProxies(filterActive(buildStandardProxies()));
